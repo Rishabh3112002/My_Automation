@@ -8,9 +8,9 @@ browser.get('http://github.com/login')
 def create():
     print(str(sys.argv[1]))
     py_button = browser.find_elements_by_xpath("//*[@id='login_field']")[0]
-    py_button.send_keys('Rishabh3112002')
+    py_button.send_keys('YOUR_GITHUB_USERNAME')
     pass_button = browser.find_elements_by_xpath("//*[@id='password']")[0]
-    pass_button.send_keys('@Rk3112002')
+    pass_button.send_keys('YOUR_GITHUB_PASSWORD')
     sign_button = browser.find_elements_by_xpath("//*[@id='login']/div[4]/form/div/input[12]")[0]
     sign_button.click()
     browser.get('https://github.com/new')
